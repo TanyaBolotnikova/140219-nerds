@@ -2,11 +2,175 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Nerds</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+        <div class="container">
+          <nav class="main-navigation">
+          <div class="index-logo">
+            <img src="img/index-logo.png" width="139" height="56" alt="Nerds">
+          </div>
+            <ul>
+              <li><a href="#">СТУДИЯ</a></li>
+              <li><a href="#">КЛИЕНТЫ</a></li>
+              <li><a href="#">МАГАЗИН</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+              <li><a href="#">КОРЗИНА</a></li>
+            </ul>
+          </nav>
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики, только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+        <div class="offer clearfix">
+        <div class="offer-item-left">
+          <figure class="offer-item-image">
+           <img src="img/offer-item-img-web.jpg" width="240" height="124" alt="Разработка веб-сайтов">
+         </figure>
+          <h2 class="offer-item-title">Веб-сайты</h2>
+            <p class="offer-item-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn offer-btn offer-btn-web" href="#">Заказать</a>
+        </div>
+        <div class="offer-item-middle">
+          <figure class="offer-item-image">
+           <img src="img/offer-item-img-mobile.jpg" width="240" height="124" alt="Разработка веб-сайтов">
+          </figure>
+          <h2 class="offer-item-title">Приложения</h2>
+            <p class="offer-item-info">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="btn offer-btn offer-btn-mobile" href="#">Заказать</a>
+        </div>
+        <div class="offer-item-right">
+         <figure class="offer-item-image">
+          <img src="img/offer-item-img-pres.jpg" width="240" height="124" alt="Разработка веб-сайтов">
+        </figure>
+          <h2 class="offer-item-title">Презентации</h2>
+           <p class="offer-item-info">Вы даже не подозреваете, насколько вы изумительны!</p>
+         <a class="btn offer-btn offer-btn-presentation" href="#">Заказать</a>
+          </div>
+        </div>
+      <div class="detail clearfix">
+        <div class="detail-left-column">
+          <p class="detail-header-title">
+            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
+          </p>
+          <p class="detail-header-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="detail-list-title">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+            <ul class="detail-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+           <div class="detail-right-column clearfix">
+             <figure class="detail-header-image">
+              <img src="img/main-header-logo.png" width="" height="" alt="Nerds">
+                </figure>
+              <!-- Как поступить? Лейбл nerd's и SINCE 2004 объединить или двумя картинками добавить? -->
+              <!-- <div class="detail-date">
+                    <div>Since 2004</div>
+                </div> -->
+              <h3 class="detail-list-title">КАК МЫ РАБОТАЕМ:</h3>
+              <ul class="detail-list">
+                <li>С самоотдачей 146%</li>
+                <li>Соблюдаем сроки на 100%</li>
+                <li>По предоплата 50%</li>
+              </ul>
+            </div>
+        </div>
+        <div class="brand clearfix">
+        <figure class="brand-item">
+            <a href="#">
+            <img src="img/brand-glukhanko.png" width="198" height="37" alt="Glukhanko">
+            </a>
+        </figure>
+        <figure class="brand-item">
+            <a href="#">
+            <img src="img/brand-academy.png" width="199" height="68" alt="HTML Academy">
+            </a>
+        </figure>
+        <figure class="brand-item">
+            <a href="#">
+            <img src="img/brand-borodinski.png" width="208" height="87" alt="Barbershop Borodinsky">
+            </a>
+        </figure>
+    </div>
+    </main>
+      <div class="map">
+        <div class="container">
+         <div class="map-description">
+            <h4 class="map-description-title">NERDS DESIGN STUDIO</h4>
+            <p class="map-description-info">191186, Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+            <p class="map-description-info">тел. +7 (812) 275-75-75</p>
+            <a href="feedback.html" class="btn map-btn">Напишите нам</a>
+       </div>
+      </div>
+     </div>
+<div class="feedback">
+        <form action="/feedback" method="post">
+            <div class="feedback-user clearfix">
+                <div class="feedback-left-column">
+                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                    <input type="text" name="login" id="feedback-login" placeholder="ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА" required>
+                </div>
+                <div class="feedback-right-column">
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="feedback-email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
+                </div>
+            </div>
+            <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+            <textarea name="text" id="feedback-textarea" placeholder="В СВОБОДНОЙ ФОРМЕ" required rows="5"></textarea>
+            <div class="feedback-block clearfix">
+                <button type="submit" class="btn feedback-btn">Отправить</button>
+                <a class="btn feedback-cancel" href="#">Омена</a>
+            </div>
+            <a href="#" class="feedback-circle-btn"></a>
+        </form>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-social-left">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="footer-discount-right">
+          <h1>Давайте дружить!</h1>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
