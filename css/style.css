@@ -10,16 +10,16 @@
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  font-weight: normal;
-  font-family: "symbols-nerds";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
+    display: inline-block;
+    vertical-align: baseline;
+    font-weight: normal;
+    font-family: "symbols-nerds";
+    text-align: center;
+    text-transform: none;
+    text-decoration: inherit;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
 }
 
 .icon-basket::before { content: "\62"; } /* "b" */
@@ -182,6 +182,7 @@ textarea {
     font-weight: 500;
 }
 /*стилизация placeholder*/
+
 .feedback input::-webkit-input-placeholder,
 .feedback textarea::-webkit-input-placeholder {
     color: #000;
@@ -348,6 +349,7 @@ textarea {
 .slider-right-column {
     float: right;
     width: 340px;
+    margin-top: 36px;
 }
 
 .slider-right-column .slider-figure {
@@ -356,19 +358,11 @@ textarea {
 
 .slider-math-figure {
     margin-right: 10px;
-    padding-top: 50px;
-
-}
-
-.slider-drugs-figure {
-    position: absolute;
-    bottom: 0px;
+    padding-top: 14px;
 }
 
 .slider-design-figure {
-    position: absolute;
-    top: 10px;
-    padding-top: 37px;
+    padding-top: 11px;
 }
 
 .slider-math-figure,
@@ -428,10 +422,8 @@ textarea {
 
 .slider label {
     position: absolute;
-    bottom: 57px;
+    bottom: 93px;
     z-index: 10;
-    display: inline-block;
-    vertical-align: baseline;
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -559,7 +551,6 @@ textarea {
 }
 
 .detail {
-    position: relative;
     padding-top: 60px;
     padding-bottom: 48px;
     border-bottom: 2px solid #eeeeee;
@@ -633,7 +624,6 @@ textarea {
 /* бренд */
 
 .brand {
-    position: relative;
     margin-bottom: 85px;
     padding-top: 40px;
     padding-bottom: 38px;
@@ -677,14 +667,11 @@ textarea {
 }
 
 .map-description {
-  position: absolute;
-  top: 90px;
-  padding-top: 22px;
-  padding-left: 22px;
-  padding-right: 23px;
-  padding-bottom: 25px;
-  width: 205px;
-  background-color: white;
+    position: absolute;
+    top: 90px;
+    padding: 22px 23px 25px 22px;
+    width: 205px;
+    background-color: white;
 }
 
 .map-description-title {
@@ -731,19 +718,18 @@ textarea {
 }
 
 .social-btn {
-  position: relative;
-  float: left;
-  margin-right: 30px;
-  width: 60px;
-  height: 60px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  background: #e1e1e1;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
+    float: left;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background: #e1e1e1;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .social-btn:hover {
@@ -754,6 +740,7 @@ textarea {
     box-shadow: inset 0 3px 0 0 #b63e42;
     background-color: #d6494d;
 }
+
 .social-btn::before {
     font-family: "symbols-nerds";
     font-style: normal;
@@ -777,7 +764,6 @@ textarea {
 }
 
 /* Popup */
-
 
 .feedback {
     position: fixed;
@@ -840,7 +826,6 @@ textarea {
     border: 2px solid #56bffb;
     border-radius: 4px;
 }
-
 
 .feedback label {
     margin-bottom: 11px;
@@ -986,7 +971,7 @@ textarea {
 
 .catalog-right-column {
     float: right;
-    width: 560px;
+    width: 561px;
 }
 
 .grid {
@@ -1023,7 +1008,7 @@ textarea {
 
 .filter-btn:active {
     padding-top: 10px;
-    background-color: #e5e5e5;
+    background-color: #d5d5d5;
     box-shadow: inset 0 3px 0 0 #b5b5b5;
     color: black;
 }
@@ -1043,8 +1028,8 @@ textarea {
 }
 
 fieldset {
-  border: none;
-  padding-bottom: 47px;
+    border: none;
+    padding-bottom: 47px;
 }
 
 .catalog-filter-scale {
@@ -1056,6 +1041,7 @@ fieldset {
     width: 80%;
     height: 2px;
     background-color: #00ca74;
+    font-size: 0;
 }
 
 .catalog-filter-controls .catalog-scale-toggle {
@@ -1068,6 +1054,7 @@ fieldset {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
+    font-size: 0;
 }
 
 .catalog-min-toggle {
@@ -1249,11 +1236,12 @@ a.catalog-paginator-next {
     border: 2px solid #f2f2f2;
     background-color: white;
 }
+
 /* блок каталога */
 
 .catalog-sort {
-    margin-bottom: 16px;
-    padding-top: 5px;
+    margin-bottom: 15px;
+    padding-top: 3px;
     font-size: 0;
 }
 
@@ -1261,7 +1249,7 @@ a.catalog-paginator-next {
 .catalog-sort a {
     display: inline-block;
     vertical-align: baseline;
-    margin-right: 40px;
+    margin-right: 42px;
 }
 
 .catalog-sort a:hover {
@@ -1316,20 +1304,25 @@ a.catalog-arrow-active:active::before {
     font-variant: normal;
     text-transform: none;
 }
+
 .catalog-arrow-up::before {
     content: "\25b2";
 }
+
 .catalog-arrow-down::before {
     content: "\25bc";
 }
+
 .catalog-arrow-up,
 .catalog-arrow-down {
     color: #c1c1c1;
 }
+
 .catalog-arrow-block .catalog-arrow-up:hover,
 .catalog-arrow-block .catalog-arrow-down:hover {
     color: #b5b5b5;
 }
+
 .catalog-arrow-block .catalog-arrow-up:active,
 .catalog-arrow-block .catalog-arrow-down:active {
     color: #000;
@@ -1343,6 +1336,7 @@ a.catalog-arrow-active:active::before {
 .catalog-item {
     position: relative;
     display: inline-block;
+    vertical-align: baseline;
     text-decoration: none;
     width: 240px;
     height: 240px;
@@ -1351,6 +1345,7 @@ a.catalog-arrow-active:active::before {
     border-top-right-radius: 5px;
     margin: 0 0 80px;
 }
+
 .catalog-item:hover {
     border-top-color: #797979;
 }
@@ -1363,7 +1358,6 @@ a.catalog-arrow-active:active::before {
     color: white;
 }
 
-
 .catalog-item:hover > .catalog-item-block {
     display: block;
 }
@@ -1374,25 +1368,24 @@ a.catalog-arrow-active:active::before {
     left: 20px;
     display: none;
     width: 160px;
-    min-height: 160px;
+    min-height: 165px;
     padding: 35px 20px 0px 20px;
     background-color: white;
     text-align: center;
 }
 
 .sunset {
-    width: 140px;
-    min-height: 160px;
+    width: 141px;
     padding: 35px 30px 0px 30px;
 }
+
 .forte {
     width: 123px;
-    min-height: 160px;
     padding: 35px 39px 2px 39px;
 }
 
 .catalog-item-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: black;
     text-transform: uppercase;
     font-weight: 500;
@@ -1401,12 +1394,14 @@ a.catalog-arrow-active:active::before {
 .thai h3 {
     margin-bottom: 10px;
 }
+
 .thai p {
     margin-bottom: 12px;
 }
+
 .catalog-item-info {
     color: #283136;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .catalog-item-btn {
